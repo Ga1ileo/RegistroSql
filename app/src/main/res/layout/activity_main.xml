@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favor Llenar los Datos"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+   <EditText
+       android:id="@+id/name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Nombres"
+       android:textSize="24dp"
+       android:layout_below="@id/texttitle"
+       android:inputType="textPersonName"
+   />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numero de Telefono"
+        android:textSize="24dp"
+        android:layout_below="@id/name"
+        android:inputType="number"
+     />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Nacimiento"
+        android:textSize="24dp"
+        android:layout_below="@id/contact"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Guardar"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/dob"
+        />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Actualizar"
+        android:layout_below="@+id/btnGuardar"
+        />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Eliminar"
+        android:layout_below="@+id/btnActualizar"
+        />
+
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Ver Usuarios"
+        android:layout_below="@+id/btnEliminar"
+        />
+
+
+
+
+</RelativeLayout>
